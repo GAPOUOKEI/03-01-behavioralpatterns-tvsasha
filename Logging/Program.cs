@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Logger consoleLogger = new ConsoleLogger();
+            Logger fileLogger = new FileLogger();
+
+            consoleLogger.Log("Сообщение для консоли");
+            fileLogger.Log("Сообщение для файла");
+
+            Console.WriteLine("Логирование завершено.");
         }
     }
 }

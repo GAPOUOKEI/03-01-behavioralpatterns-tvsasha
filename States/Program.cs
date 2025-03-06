@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ClientRequest request = new ClientRequest();
+
+            while (true)
+            {
+                request.ShowStatus();
+                Console.WriteLine("Нажмите Enter для перехода к следующему этапу запроса");
+                string input = Console.ReadLine();
+                request.Process();
+                Console.WriteLine();
+            }
         }
     }
 }
