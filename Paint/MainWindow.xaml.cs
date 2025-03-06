@@ -54,7 +54,7 @@ namespace Paint
 
         private void RemoveShape_Click(object sender, RoutedEventArgs e)
         {
-            //ExecuteCommand(new RemoveShapeCommand(DrawingCanvas, shapes));
+            ExecuteCommand(new RemoveShapeCommand(DrawingCanvas, shapes));
         }
 
         private void Undo_Click(object sender, RoutedEventArgs e)
